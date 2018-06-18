@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Basic_Genetic_Algorithm", "Basic_Genetic_Algorithm.dsp", "{AE5CA39E-6BBC-4615-94C2-781A4B06CE8E}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AF3B98E-0A43-4314-AF6C-0BA0A0C78F86}
+	EndGlobalSection
+EndGlobal
