@@ -112,13 +112,13 @@ int main()
 			  {
           cout << "\nSolution found in " << GenerationsRequiredToFindASolution << " generationsdgfsdfsdfsdfsdfsdfsdfsdfsdfsdfs!" << endl << endl;;
 
-				  
+		  PrintChromo(Population[i].bits);
 
 				  bFound = true;
 
           break;
 			  }
- PrintChromo(Population[i].bits);
+
 
 		  }
 
