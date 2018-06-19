@@ -8,18 +8,18 @@
 //-----------------------------------------------------------------------------------------------
 #include <string>
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include <time.h>
 #include <math.h>
 
-using std::string;
-
+//using std::string;
+using namespace std;
 #define CROSSOVER_RATE            0.7
 #define MUTATION_RATE             0.001
 #define POP_SIZE                  100			//must be an even number
 #define CHROMO_LENGTH             300
 #define GENE_LENGTH               4
-#define MAX_ALLOWABLE_GENERATIONS	400
+#define MAX_ALLOWABLE_GENERATIONS	10000
 
 //returns a float between 0 & 1
 #define RANDOM_NUM		((float)rand()/(RAND_MAX+1))
@@ -101,21 +101,25 @@ int main()
 			  Population[i].fitness = AssignFitness(Population[i].bits, Target);
 
 			  TotalFitness += Population[i].fitness;
+
 		  }
+			
 
 		  // check to see if we have found any solutions (fitness will be 999)
-		  for (i=0; i<POP_SIZE; i++)
+		  for (int i=0; i<POP_SIZE; i++)
 		  {
 			  if (Population[i].fitness == 999.0f)
 			  {
-          cout << "\nSolution found in " << GenerationsRequiredToFindASolution << " generations!" << endl << endl;;
+          cout << "\nSolution found in " << GenerationsRequiredToFindASolution << " generationsdgfsdfsdfsdfsdfsdfsdfsdfsdfsdfs!" << endl << endl;;
 
-				  PrintChromo(Population[i].bits);
+				  
 
 				  bFound = true;
 
           break;
 			  }
+ PrintChromo(Population[i].bits);
+
 		  }
 
 		  // create a new population by selecting two parents at a time and creating offspring
@@ -150,7 +154,7 @@ int main()
 		  }//end loop
 
 		  //copy temp population into main population array
-		  for (i=0; i<POP_SIZE; i++)
+		  for (int i=0; i<POP_SIZE; i++)
       {
 			  Population[i] = temp[i];
       }
@@ -291,7 +295,7 @@ int ParseBits(string bits, int* buffer)
 	//	is included and delete it. (ie a '/' followed by a '0'). We take an easy
 	//	way out here and just change the '/' to a '+'. This will not effect the 
 	//	evolution of the solution
-	for (i=0; i<cBuff; i++)
+	for (int i=0; i<cBuff; i++)
 	{
 		if ( (buffer[i] == 13) && (buffer[i+1] == 0) )
 		
