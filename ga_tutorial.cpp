@@ -159,6 +159,7 @@ int main()
 			  Population[i] = temp[i];
       }
 
+		  //i'm tired
 		  ++GenerationsRequiredToFindASolution;
 
 		  // exit app if no solution found within the maximum allowable number

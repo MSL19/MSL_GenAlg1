@@ -1,11 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Basic_Genetic_Algorithm", "Basic_Genetic_Algorithm.dsp", "{AE5CA39E-6BBC-4615-94C2-781A4B06CE8E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Basic_Genetic_Algorithm", "Basic_Genetic_Algorithm.vcxproj", "{AE5CA39E-6BBC-4615-94C2-781A4B06CE8E}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE5CA39E-6BBC-4615-94C2-781A4B06CE8E}.Debug|x86.ActiveCfg = Debug|Win32
+		{AE5CA39E-6BBC-4615-94C2-781A4B06CE8E}.Debug|x86.Build.0 = Debug|Win32
+		{AE5CA39E-6BBC-4615-94C2-781A4B06CE8E}.Release|x86.ActiveCfg = Release|Win32
+		{AE5CA39E-6BBC-4615-94C2-781A4B06CE8E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
