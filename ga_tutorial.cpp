@@ -19,7 +19,7 @@ using namespace std;
 #define POP_SIZE                  100			//must be an even number
 #define CHROMO_LENGTH             300
 #define GENE_LENGTH               4
-#define MAX_ALLOWABLE_GENERATIONS	10000
+#define MAX_ALLOWABLE_GENERATIONS	400
 
 //returns a float between 0 & 1
 #define RANDOM_NUM		((float)rand()/(RAND_MAX+1))
