@@ -102,6 +102,9 @@ int main()
 
 			  TotalFitness += Population[i].fitness;
 
+			  PrintChromo(Population[i].bits);
+			  cout << "\n";
+
 		  }
 			
 
