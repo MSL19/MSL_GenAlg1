@@ -335,20 +335,7 @@ float AssignFitness(string bits, int target_value)
 				result += buffer[i+1];
 				break;
 
-			case 11:
-				
-				result -= buffer[i+1];
-				break;
-
-			case 12:
-
-				result *= buffer[i+1];
-				break;
-
-			case 13:
-	
-				result /= buffer[i+1];
-				break;
+			
 
 		}//end switch
 
@@ -407,21 +394,7 @@ void PrintGeneSymbol(int val)
 			cout << "+";
 			break;
 			
-		case 11:
-			
-			cout << "-";
-			break;
-			
-		case 12:
-			
-			cout << "*";
-			break;
-			
-		case 13:
-			
-			cout << "/";
-			break;
-			
+		
 		}//end switch
 		
 		cout << " ";
